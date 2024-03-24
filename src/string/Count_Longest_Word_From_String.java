@@ -1,23 +1,19 @@
 package string;
 
 public class Count_Longest_Word_From_String {
-public static void main(String[] args) {
-	String s="I am a java developer"; 
-	 String s1[]=s.split(" "); 
-	 System.out.println("length of array : "+s1.length); 
-	 for(int i=0;i<s1.length;i++) 
-	 { 
-	 System.out.print(s1[i]+"-"); 
-	 System.out.println(s1[i].length()); 
-	 } 
-	 int max=0; 
-	 for(int i=0;i<s1.length;i++) 
-	 { 
-	 if(s1[i].length()>max) 
-	 { 
-	 max=s1[i].length(); 
-	 } 
-	 } 
-	 System.out.print("The longest word from the string : "+max);
-}
+	public static void main(String[] args) {
+		String s = "I am a java developer";
+		String [] wordsArray=s.split(" ");
+		String longestWord=null;
+		int max=0;
+		for(int i=0;i<wordsArray.length;i++) {
+			System.out.println(wordsArray[i]+" "+wordsArray[i].length());
+			if(wordsArray[i].length()>max){
+				max=wordsArray[i].length();
+				longestWord=wordsArray[i];
+			}
+		}
+		System.out.println("Longest word "+longestWord+" "+max);
+
+	}
 }
