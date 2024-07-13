@@ -16,3 +16,4 @@ public class Second_Highest_Value_From_Array {
 		System.out.println(max);
 	}
 }
+//done-2
